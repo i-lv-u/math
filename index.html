@@ -1,44 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Instagram:bg.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>#A</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
 <div class="phone">
+    <div id="main-menu" class="main-menu">
+        <h1>التدريبات على القسم الجديد</h1>
+        <p>دعواتكم بالقبول ❤</p>
+        <button id="btn-choose-math" class="menu-card math-card">
+            <span class="icon">🧮</span>
+            <div class="info"><h3>Math</h3><span>الحاسبة والعمليات الحسابية</span></div>
+        </button>
+        <button id="btn-choose-english" class="menu-card english-card">
+            <span class="icon">🔤</span>
+            <div class="info"><h3>English </h3><span>القواعد و التهجئة والكلمات</span></div>
+        </button>
+    </div>
 
-    <div class="header">
-        <div class="title">
-            <h2>دعواتكم بالقبول ❤️</h2>
-            <span id="level">Level 1</span>
+    <div id="game-screen" class="game-screen hidden">
+        <div class="header">
+            <button id="backToMenu" class="back-btn">⬅ القائمة</button>
+            <div class="title"><h2 id="game-title">Math Section</h2><span id="level">Level 1</span></div>
         </div>
-    </div>
-
-    <div class="modes-container">
-        <button id="mode-add-sub" class="mode-btn">➕/➖</button>
-        <button id="mode-mul-div" class="mode-btn">✖️/➗</button>
-        <button id="mode-random" class="mode-btn active">🔀 مختلط</button>
-    </div>
-
-    <div class="card">
-        <div id="equation" class="equation">
-            </div>
-    </div>
-
-    <div id="numbers" class="numbers">
+        <div id="math-modes" class="modes-container hidden">
+            <button id="mode-add-sub" class="math-mode-btn">➕/➖</button>
+            <button id="mode-mul-div" class="math-mode-btn">✖️/➗</button>
+            <button id="mode-random" class="math-mode-btn active">🔀 مختلط</button>
         </div>
+        <div id="english-modes" class="modes-container hidden">
+            <button id="mode-vocab" class="eng-mode-btn active">📝 Vocab</button>
+            <button id="mode-spelling" class="eng-mode-btn">✏️ Spelling</button>
+            <button id="mode-grammar" class="eng-mode-btn">📖 Grammar</button>
+        </div>
+        <div class="card"><div id="equation" class="equation"></div></div>
+        <div id="numbers" class="numbers-grid"></div>
+        <button id="deleteBtn" class="delete-btn">🗑 الحذف</button>
+    </div>
 
-    <button id="deleteBtn" class="delete">
-        🗑 
-    </button>
-
+<div class="social-links">
+    <a href="https://t.me/al00nzi" class="social-icon" target="_blank">
+        <i class="fab fa-telegram"></i>
+    </a>
+    <a href="https://www.instagram.com/bg.0" class="social-icon" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
 </div>
 
+
+<script src="questions.js"></script>
 <script src="script.js"></script>
 </body>
 </html>
